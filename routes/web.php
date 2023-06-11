@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TopController;
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\MailController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +16,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [TopController::class, 'index'])->name('index');
+Route::get('/about', [AboutController::class, 'index'])->name('about');
+Route::get('/mail', [MailController::class, 'index'])->name('mail');
