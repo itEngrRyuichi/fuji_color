@@ -1,0 +1,383 @@
+*{
+    font-family: 'Roboto','Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3',Meiryo, メイリオ,Helvetica, Arial, sans-serif;
+}
+.title{
+    border-left: #21b11e 6px solid;
+    padding: 10px 30px;
+    margin: 0 0 40px 0;
+    .upper_title{
+        font-size: 36px;
+    }
+    .downer_title{
+        font-size: 20px;
+    }
+}
+
+.upper{
+    background-color: #009e7c;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+    a{
+        color: #fff;
+        text-decoration: none;
+        position: relative;
+        &.phone{
+            padding-left: 30px;
+            &:after{
+                content: '';
+                background-image: url('../../public/storage/icons/call.png');
+                background-size: cover;
+                background-origin: content-box;
+                background-repeat: no-repeat;
+                width: 40px;
+                height: 40px;
+                left: 0;
+                position: absolute;
+                padding: 12px;
+            }
+        }
+        &.email{
+            padding-left: 35px;
+            &:after{
+                content: '';
+                background-image: url('../../public/storage/icons/mail.png');
+                background-size: cover;
+                background-origin: content-box;
+                background-repeat: no-repeat;
+                width: 40px;
+                height: 40px;
+                left: 0;
+                position: absolute;
+                padding: 12px;
+            }
+        }
+    }
+}
+.downer{
+    background: #fff;
+}
+.downer-wrapper{
+    position: relative;
+    display: flex;
+    .main_logo{
+        width: 35vw;
+    }
+}
+.navigation{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    .navigation-item{
+        margin: auto 0;
+    }
+    .navigation-link{
+        padding: 0 10px;
+        font-size: 16px;
+        text-decoration: none;
+        color: #000;
+    }
+}
+.navigation-right{
+    display: flex;
+    position: absolute;
+    right: 60px;
+    height: 100%;
+}
+.top{
+    background: url('../../public/storage/top_main_background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 100%;
+    .top_text{
+        text-align: center;
+        color: #fff;
+        font-family: 'Sawarabi Gothic', sans-serif !important;
+    }
+    .top_text1{
+        padding-top: 25vh;
+        font-size: 45px;
+    }
+    .top_text2{
+        font-size: 48px;
+    }
+}
+.services{
+    margin-top: 40px;
+    background: #212121;
+    padding: 100px 0;
+    font-family: 'Nanum Gothic', sans-serif !important;
+    .title,.description{
+        color: #fff;
+    }
+    .description{
+        font-size: 18px;
+    }
+    .contents{
+        padding-top: 25px;
+        position: relative;
+    }
+    .page_link{
+        padding: 5px;
+    }
+    .link_img{
+        width: 100%;
+        height: 100%;
+    }
+
+    /* link集 */
+    /* .link_quality{
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            width: calc(100% - 10px);
+            height: calc(100% - 10px);
+            background-color: #b71c1c98;
+        }
+        &::after{
+            content: '高品質な印刷サービス';
+            font-size: 18px;
+            position: absolute;
+            color: #fff;
+            top: 45%;
+            left: 0;
+            width: calc(100% - 10px);
+            text-align: center;
+        }
+    }
+    .link_services{
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            width: calc(100% - 10px);
+            height: calc(100% - 10px);
+            background-color: #e6510098;
+        }
+        &::after{
+            content: '印刷サービス一覧';
+            font-size: 18px;
+            position: absolute;
+            color: #fff;
+            top: 45%;
+            left: 0;
+            width: calc(100% - 10px);
+            text-align: center;
+        }
+    }
+    .link_flow{
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            width: calc(100% - 10px);
+            height: calc(100% - 10px);
+            background-color: #ffff0098;
+        }
+        &::after{
+            content: 'ご依頼の流れ';
+            font-size: 18px;
+            position: absolute;
+            color: #fff;
+            top: 45%;
+            left: 0;
+            width: calc(100% - 10px);
+            text-align: center;
+        }
+    }
+    .link_insert{
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            width: calc(100% - 10px);
+            height: calc(100% - 10px);
+            background-color: #90caf998;
+        }
+        &::after{
+            content: 'データ入稿について';
+            font-size: 18px;
+            position: absolute;
+            color: #fff;
+            top: 45%;
+            left: 0;
+            width: calc(100% - 10px);
+            text-align: center;
+        }
+    }
+    .link_form{
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            width: calc(100% - 10px);
+            height: calc(100% - 10px);
+            background-color: #43a04798;
+        }
+        &::after{
+            content: '無料メール見積';
+            font-size: 18px;
+            position: absolute;
+            color: #fff;
+            top: 45%;
+            left: 0;
+            width: calc(100% - 10px);
+            text-align: center;
+        }
+    }
+    .link_falboard{
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            width: calc(100% - 10px);
+            height: calc(100% - 10px);
+            background-color: #b71c1c98;
+        }
+        &::after{
+            content: 'Falboard AQUA導入のお知らせ';
+            font-size: 18px;
+            position: absolute;
+            color: #fff;
+            top: 45%;
+            left: 0;
+            width: calc(100% - 10px);
+            text-align: center;
+        }
+    }
+    .link_scanning{
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            width: calc(100% - 10px);
+            height: calc(100% - 10px);
+            background-color: #e6510098;
+        }
+        &::after{
+            content: 'スキャンニングサービス';
+            font-size: 18px;
+            position: absolute;
+            color: #fff;
+            top: 45%;
+            left: 0;
+            width: calc(100% - 10px);
+            text-align: center;
+        }
+    }
+    .link_work{
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            width: calc(100% - 10px);
+            height: calc(100% - 10px);
+            background-color: #ffff0098;
+        }
+        &::after{
+            content: '制作実績';
+            font-size: 18px;
+            position: absolute;
+            color: #fff;
+            top: 45%;
+            left: 0;
+            width: calc(100% - 10px);
+            text-align: center;
+        }
+    }
+    .link_blog{
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            width: calc(100% - 10px);
+            height: calc(100% - 10px);
+            background-color: #90caf998;
+        }
+        &::after{
+            content: 'スタッフブログ';
+            font-size: 18px;
+            position: absolute;
+            color: #fff;
+            top: 45%;
+            left: 0;
+            width: calc(100% - 10px);
+            text-align: center;
+        }
+    } */
+}
+.about{
+    padding: 80px 0;
+    .about_content{
+        padding-bottom: 20px;
+        .subtitle{
+            font-size: 20px;
+        }
+        .content{
+            font-size: 14.5px;
+        }
+    }
+    .about-btn{
+        padding: 10px 20px 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.01);
+    }
+    .about_img{
+        width: 100%;
+        height: auto;
+        padding: 70px;
+    }
+}
+.knowlege{
+    padding-bottom: 100px;
+    .other_content{
+        text-align: center;
+    }
+    .subtitle{
+        font-size: 18px;
+        padding: 20px 0;
+    }
+    .other_icon{
+        background: #21b11e;
+        border-radius: 50%;
+        display: inline-block;
+        img{
+            height: 100px;
+            width: 100px;
+            padding: 20px;
+        }
+    }
+    .content{
+        font-size: 14.5px;
+        text-align: left;
+    }
+    .bold{
+        font-weight: bold;
+    }
+}
+.footer{
+    padding: 50px 0;
+    background: #212121;
+    color: #9e9e9e;
+    .footer_title{
+        font-size: 25px;
+    }
+    .footer_sub_title{
+        font-size: 10px;
+    }
+    .footer_title2{
+        font-size: 20px;
+    }
+    .footer_sub_title2{
+        font-size: 14px;
+        .footer_i{
+            text-align: right;
+        }
+        .footer_icon{
+            width: 16px;
+            height: 16px;
+        }
+    }
+}
