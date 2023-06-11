@@ -11112,6 +11112,43 @@ textarea.form-control-lg {
   height: auto;
   padding: 70px;
 }
+.about .flow_title {
+  font-size: 16px;
+  font-weight: bold;
+}
+.about .down_arrow {
+  height: 25px;
+  width: 25px;
+}
+.about .print_img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 10px;
+}
+.about .service_img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 150px;
+  width: 150px;
+}
+.about .product_img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 100%;
+  width: 100%;
+}
+.about .list-table {
+  padding: 40px;
+}
+.about .list-table .list-title {
+  background-color: #009e7c;
+  color: #fff;
+  text-align: center;
+  margin: auto;
+}
+.about .list-table .left_list-title {
+  line-height: 100px;
+}
+.about .list-table div {
+  border: #009e7c 1px solid;
+}
 
 .knowlege {
   padding-bottom: 100px;
