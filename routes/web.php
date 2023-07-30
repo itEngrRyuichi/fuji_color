@@ -14,6 +14,10 @@ use App\Http\Controllers\ScanningController;
 use App\Http\Controllers\AchiveController;
 use App\Http\Controllers\QuestionController;
 use App\Http\Controllers\PersonalController;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\OrderController;
 
 /*
 |--------------------------------------------------------------------------
@@ -39,3 +43,7 @@ Route::resource('/scanning', ScanningController::class)->names(['index' => 'scan
 Route::resource('/achive', AchiveController::class)->names(['index' => 'achive']);
 Route::resource('/question', QuestionController::class)->names(['index' => 'question']);
 Route::resource('/personal', PersonalController::class)->names(['index' => 'personal']);
+Route::resource('/admin', AdminController::class)->names(['index' => 'admin']);
+Route::resource('/category', CategoryController::class)->names(['index' => 'category_list', 'create' => 'category_create']);
+Route::resource('/product', ProductController::class)->names(['index' => 'product_list', 'create' => 'product_create']);
+Route::resource('/order', OrderController::class)->names(['index' => 'order_list', 'create' => 'order_create']);

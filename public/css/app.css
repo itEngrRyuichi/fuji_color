@@ -10892,186 +10892,6 @@ textarea.form-control-lg {
   padding: 100px 0;
   font-family: "Nanum Gothic", sans-serif !important;
   /* link集 */
-  /* .link_quality{
-      position: relative;
-      &::before{
-          content: '';
-          position: absolute;
-          width: calc(100% - 10px);
-          height: calc(100% - 10px);
-          background-color: #b71c1c98;
-      }
-      &::after{
-          content: '高品質な印刷サービス';
-          font-size: 18px;
-          position: absolute;
-          color: #fff;
-          top: 45%;
-          left: 0;
-          width: calc(100% - 10px);
-          text-align: center;
-      }
-  }
-  .link_services{
-      position: relative;
-      &::before{
-          content: '';
-          position: absolute;
-          width: calc(100% - 10px);
-          height: calc(100% - 10px);
-          background-color: #e6510098;
-      }
-      &::after{
-          content: '印刷サービス一覧';
-          font-size: 18px;
-          position: absolute;
-          color: #fff;
-          top: 45%;
-          left: 0;
-          width: calc(100% - 10px);
-          text-align: center;
-      }
-  }
-  .link_flow{
-      position: relative;
-      &::before{
-          content: '';
-          position: absolute;
-          width: calc(100% - 10px);
-          height: calc(100% - 10px);
-          background-color: #ffff0098;
-      }
-      &::after{
-          content: 'ご依頼の流れ';
-          font-size: 18px;
-          position: absolute;
-          color: #fff;
-          top: 45%;
-          left: 0;
-          width: calc(100% - 10px);
-          text-align: center;
-      }
-  }
-  .link_insert{
-      position: relative;
-      &::before{
-          content: '';
-          position: absolute;
-          width: calc(100% - 10px);
-          height: calc(100% - 10px);
-          background-color: #90caf998;
-      }
-      &::after{
-          content: 'データ入稿について';
-          font-size: 18px;
-          position: absolute;
-          color: #fff;
-          top: 45%;
-          left: 0;
-          width: calc(100% - 10px);
-          text-align: center;
-      }
-  }
-  .link_form{
-      position: relative;
-      &::before{
-          content: '';
-          position: absolute;
-          width: calc(100% - 10px);
-          height: calc(100% - 10px);
-          background-color: #43a04798;
-      }
-      &::after{
-          content: '無料メール見積';
-          font-size: 18px;
-          position: absolute;
-          color: #fff;
-          top: 45%;
-          left: 0;
-          width: calc(100% - 10px);
-          text-align: center;
-      }
-  }
-  .link_falboard{
-      position: relative;
-      &::before{
-          content: '';
-          position: absolute;
-          width: calc(100% - 10px);
-          height: calc(100% - 10px);
-          background-color: #b71c1c98;
-      }
-      &::after{
-          content: 'Falboard AQUA導入のお知らせ';
-          font-size: 18px;
-          position: absolute;
-          color: #fff;
-          top: 45%;
-          left: 0;
-          width: calc(100% - 10px);
-          text-align: center;
-      }
-  }
-  .link_scanning{
-      position: relative;
-      &::before{
-          content: '';
-          position: absolute;
-          width: calc(100% - 10px);
-          height: calc(100% - 10px);
-          background-color: #e6510098;
-      }
-      &::after{
-          content: 'スキャンニングサービス';
-          font-size: 18px;
-          position: absolute;
-          color: #fff;
-          top: 45%;
-          left: 0;
-          width: calc(100% - 10px);
-          text-align: center;
-      }
-  }
-  .link_work{
-      position: relative;
-      &::before{
-          content: '';
-          position: absolute;
-          width: calc(100% - 10px);
-          height: calc(100% - 10px);
-          background-color: #ffff0098;
-      }
-      &::after{
-          content: '制作実績';
-          font-size: 18px;
-          position: absolute;
-          color: #fff;
-          top: 45%;
-          left: 0;
-          width: calc(100% - 10px);
-          text-align: center;
-      }
-  }
-  .link_blog{
-      position: relative;
-      &::before{
-          content: '';
-          position: absolute;
-          width: calc(100% - 10px);
-          height: calc(100% - 10px);
-          background-color: #90caf998;
-      }
-      &::after{
-          content: 'スタッフブログ';
-          font-size: 18px;
-          position: absolute;
-          color: #fff;
-          top: 45%;
-          left: 0;
-          width: calc(100% - 10px);
-          text-align: center;
-      }
-  } */
 }
 .services .title, .services .description {
   color: #fff;
@@ -11089,6 +10909,186 @@ textarea.form-control-lg {
 .services .link_img {
   width: 100%;
   height: 100%;
+}
+.services .link_quality {
+  position: relative;
+}
+.services .link_quality::before {
+  content: "";
+  position: absolute;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  background-color: rgba(183, 28, 28, 0.5960784314);
+}
+.services .link_quality::after {
+  content: "高品質な印刷サービス";
+  font-size: 18px;
+  position: absolute;
+  color: #fff;
+  top: 45%;
+  left: 0;
+  width: calc(100% - 10px);
+  text-align: center;
+}
+.services .link_services {
+  position: relative;
+}
+.services .link_services::before {
+  content: "";
+  position: absolute;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  background-color: rgba(230, 81, 0, 0.5960784314);
+}
+.services .link_services::after {
+  content: "印刷サービス一覧";
+  font-size: 18px;
+  position: absolute;
+  color: #fff;
+  top: 45%;
+  left: 0;
+  width: calc(100% - 10px);
+  text-align: center;
+}
+.services .link_flow {
+  position: relative;
+}
+.services .link_flow::before {
+  content: "";
+  position: absolute;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  background-color: rgba(255, 255, 0, 0.5960784314);
+}
+.services .link_flow::after {
+  content: "ご依頼の流れ";
+  font-size: 18px;
+  position: absolute;
+  color: #fff;
+  top: 45%;
+  left: 0;
+  width: calc(100% - 10px);
+  text-align: center;
+}
+.services .link_insert {
+  position: relative;
+}
+.services .link_insert::before {
+  content: "";
+  position: absolute;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  background-color: rgba(144, 202, 249, 0.5960784314);
+}
+.services .link_insert::after {
+  content: "データ入稿について";
+  font-size: 18px;
+  position: absolute;
+  color: #fff;
+  top: 45%;
+  left: 0;
+  width: calc(100% - 10px);
+  text-align: center;
+}
+.services .link_form {
+  position: relative;
+}
+.services .link_form::before {
+  content: "";
+  position: absolute;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  background-color: rgba(67, 160, 71, 0.5960784314);
+}
+.services .link_form::after {
+  content: "無料メール見積";
+  font-size: 18px;
+  position: absolute;
+  color: #fff;
+  top: 45%;
+  left: 0;
+  width: calc(100% - 10px);
+  text-align: center;
+}
+.services .link_falboard {
+  position: relative;
+}
+.services .link_falboard::before {
+  content: "";
+  position: absolute;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  background-color: rgba(183, 28, 28, 0.5960784314);
+}
+.services .link_falboard::after {
+  content: "Falboard AQUA導入のお知らせ";
+  font-size: 18px;
+  position: absolute;
+  color: #fff;
+  top: 45%;
+  left: 0;
+  width: calc(100% - 10px);
+  text-align: center;
+}
+.services .link_scanning {
+  position: relative;
+}
+.services .link_scanning::before {
+  content: "";
+  position: absolute;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  background-color: rgba(230, 81, 0, 0.5960784314);
+}
+.services .link_scanning::after {
+  content: "スキャンニングサービス";
+  font-size: 18px;
+  position: absolute;
+  color: #fff;
+  top: 45%;
+  left: 0;
+  width: calc(100% - 10px);
+  text-align: center;
+}
+.services .link_work {
+  position: relative;
+}
+.services .link_work::before {
+  content: "";
+  position: absolute;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  background-color: rgba(255, 255, 0, 0.5960784314);
+}
+.services .link_work::after {
+  content: "制作実績";
+  font-size: 18px;
+  position: absolute;
+  color: #fff;
+  top: 45%;
+  left: 0;
+  width: calc(100% - 10px);
+  text-align: center;
+}
+.services .link_blog {
+  position: relative;
+}
+.services .link_blog::before {
+  content: "";
+  position: absolute;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  background-color: rgba(144, 202, 249, 0.5960784314);
+}
+.services .link_blog::after {
+  content: "スタッフブログ";
+  font-size: 18px;
+  position: absolute;
+  color: #fff;
+  top: 45%;
+  left: 0;
+  width: calc(100% - 10px);
+  text-align: center;
 }
 
 .about {
@@ -11201,4 +11201,16 @@ textarea.form-control-lg {
 .footer .footer_sub_title2 .footer_icon {
   width: 16px;
   height: 16px;
+}
+
+* {
+  font-family: "Roboto", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Helvetica, Arial, sans-serif;
+}
+
+.admin_container {
+  background-color: #212121;
+  height: 100vh;
+}
+.admin_container h1.main_title, .admin_container .main_title.h1 {
+  color: #fafafa;
 }
